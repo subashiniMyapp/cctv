@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="quote.html" class="btn btn-primary rounded-pill py-3 px-5">Get Free Quote</a>
+                        <a href="quote.php" class="btn btn-primary rounded-pill py-3 px-5">Get Free Quote</a>
                     </div>
                 </div>
             </div>
