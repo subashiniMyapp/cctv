@@ -1,3 +1,23 @@
+<?php
+require_once "crud.php";
+$classObj = new Quote();
+if (isset($_POST['submit'])) {
+    $toArray = array(
+        'Cust_name' => $classObj->dbconn->real_escape_string($_POST['Cust_name']),
+        'Cust_email_address' => $classObj->dbconn->real_escape_string($_POST['Cust_email_address']),
+        'Cust_phone_no' => $classObj->dbconn->real_escape_string($_POST['Cust_phone_no']),
+        'Cust_service' => $classObj->dbconn->real_escape_string($_POST['Cust_service']),
+        'Cust_spcl_note' => $classObj->dbconn->real_escape_string($_POST['Cust_spcl_note']),
+    );
+    if ($toArray != '') {
+        return $classObj->save($toArray);
+    } else {
+        echo "Somting is missing try Agin !!";
+        return false;
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +72,7 @@
                         <div class="bg-primary mb-3" style="width: 60px; height: 2px;"></div>
                         <h1 class="display-5 mb-5">Free Quote</h1>
                         <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <form method="post" name="myForm" onsubmit="return validateForm();">
+                        <form method="post" action="" name="myForm" id='myform' onsubmit="return validateForm();">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" name="name" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
@@ -64,7 +84,7 @@
                                     <input type="text" name="phone" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" name="service" style="height: 55px;">
+                                    <select class="form-select border-0" name="Cust_service" style="height: 55px;">
                                         <option selected disabled>Select A Service</option>
                                         <option value="CCTV_System">CCTV System</option>
                                         <option value="Finger_Print_Access">Finger Print Access</option>
@@ -79,7 +99,7 @@
                                     <textarea class="form-control border-0" name="note" placeholder="Special Note"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Get A Free Quote</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit" name='submit'>Get A Free Quote</button>
                                 </div>
                             </div>
                         </form>
@@ -138,25 +158,9 @@
             });
             //alert("Plese Enter a Vaild Phone Number");
             return false;
-        } else {
-            var xhr = new XMLHttpRequest(); // create a new XHR object
-            forms.addEventListener("submit", function(event) { // add an event listener to the form to handle the submission
-                event.preventDefault(); // prevent the default form submission
-                var data = new FormData(forms); // create a new FormData object from the form data
-                console.log(data);
-                //xhr.send(data); // send the request with the form data
-            });
-
-            // xhr.open("POST", "crud.php"); // specify the URL you want to send the request to
-            // xhr.onload = function() { // define a function to handle the response when it's received
-            //     if (xhr.status === 200) { // check if the response was successful
-            //         console.log(xhr.responseText); // do something with the response (e.g., display it in the console)
-            //     } else {
-            //         console.log("Request failed with status: " + xhr.status); // handle errors
-            //     }
-            // };
-            //return true;
         }
+        $('#myform').submit();
+        return true;
 
     }
 </script>
