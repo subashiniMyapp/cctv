@@ -6,17 +6,39 @@ if (isset($_POST['submit'])) {
         'Cust_name' => $classObj->dbconn->real_escape_string($_POST['Cust_name']),
         'Cust_email_address' => $classObj->dbconn->real_escape_string($_POST['Cust_email_address']),
         'Cust_phone_no' => $classObj->dbconn->real_escape_string($_POST['Cust_phone_no']),
-        'Cust_service' => $classObj->dbconn->real_escape_string($_POST['Cust_service']),
+        'Cust_service' => $classObj->dbconn->real_escape_string($_POST['cust_service']),
         'Cust_spcl_note' => $classObj->dbconn->real_escape_string($_POST['Cust_spcl_note']),
     );
-    if ($toArray != '') {
-        return $classObj->save($toArray);
+    //print_r($toArray);
+    // die();
+    if ($toArray && $toArray != '') {
+        // $classObj->save($toArray);
+        echo '<script>';
+        echo 'alert("done")';
+
+        // echo ' swal({';
+        // echo 'title: "Welcome To VSS",';
+        // echo 'text: "Thank you for submitting your quote request!!! ",';
+        // echo 'icon: "success",';
+        // echo '}).then(setTimeout(function() {';
+
+        // echo  '}, 2000));';
+        echo '</script>';
+        header('Location:quote.php');
     } else {
-        echo "Somting is missing try Agin !!";
+        echo '<script>';
+        echo 'alert("not done")';
+        // echo 'swal({
+        //     title: "Try Again",
+        //     text: "Somting is missing try Agin !!",
+        //     icon: "info",
+
+        //     })';
+        echo '</script>';
+
         return false;
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -75,28 +97,28 @@ if (isset($_POST['submit'])) {
                         <form method="post" action="" name="myForm" id='myform' onsubmit="return validateForm();">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" name="name" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" name="Cust_name" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" name='email' class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" name='Cust_email_address' class="form-control border-0" placeholder="Your Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" name="phone" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                    <input type="text" name="Cust_phone_no" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" name="Cust_service" style="height: 55px;">
-                                        <option selected disabled>Select A Service</option>
-                                        <option value="CCTV_System">CCTV System</option>
-                                        <option value="Finger_Print_Access">Finger Print Access</option>
-                                        <option value="Fire_Detection_and_Safety">Fire Detection and Safety</option>
-                                        <option value="Burglar_Alarm">Burglar Alarm</option>
-                                        <option value="Intercom_System">Intercom System</option>
-                                        <option value="Wirless_Smart_Camers">Wirless Smart Camers</option>
-                                        <option value="Smart_Home_Security">Smart Home Security</option>
+                                    <select class="form-select border-0" name="cust_service" style="height: 55px;">
+                                        <option selected disabled value="null">Select A Service</option>
+                                        <option value="CCTVSystem">CCTV System</option>
+                                        <option value="FingerPrintAccess">Finger Print Access</option>
+                                        <option value="FireDetectionandSafety">Fire Detection and Safety</option>
+                                        <option value="BurglarAlarm">Burglar Alarm</option>
+                                        <option value="IntercomSystem">Intercom System</option>
+                                        <option value="WirlessSmartCamers">Wirless Smart Camers</option>
+                                        <option value="SmartHomeSecurity">Smart Home Security</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" name="note" placeholder="Special Note"></textarea>
+                                    <textarea class="form-control border-0" name="Cust_spcl_note" placeholder="Special Note"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit" name='submit'>Get A Free Quote</button>
@@ -123,12 +145,22 @@ if (isset($_POST['submit'])) {
 
 </html>
 <script>
+    //const insert_result = "";
+    //$(document).ready(function() {
+    //resetForm();
+
+    function resetForm() {
+        var form = document.forms["myForm"];
+        form[0].reset();
+    }
+
     function validateForm() {
-        var name = document.forms["myForm"]["name"].value;
-        var phone = document.forms["myForm"]["phone"].value;
-        var email = document.forms['myForm']['email'].value;
-        var email = document.forms['myForm']['service'].value;
-        var email = document.forms['myForm']['note'].value;
+        var form = document.forms["myForm"];
+        var name = document.forms["myForm"]["Cust_name"].value;
+        var phone = document.forms["myForm"]["Cust_phone_no"].value;
+        // var email = document.forms['myForm']['email'].value;
+        // var email = document.forms['myForm']['service'].value;
+        // var email = document.forms['myForm']['note'].value;
         var regex = /^\d{10}$/;
 
         if (name == "") {
@@ -159,8 +191,9 @@ if (isset($_POST['submit'])) {
             //alert("Plese Enter a Vaild Phone Number");
             return false;
         }
-        $('#myform').submit();
+        form.submit();
+        //resetForm();
         return true;
-
     }
+    //});
 </script>

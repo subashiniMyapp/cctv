@@ -20,21 +20,14 @@ class Quote extends Database
             $sql .= implode(",", array_keys($formData)) . ') VALUES (';
             $sql .= "'" . implode("','", array_values($formData)) . "')";
             //echo $sql;
-            $runSql = $this->dbconn->executeQuery($sql);
+            $runSql = $this->dbconn->query($sql);
             if ($runSql) {
-                echo "Your Data uploaded Succesfully";
-                //return true;
+                //echo "Your Data uploaded Succesfully";
+                return true;
             } else {
                 //echo 'error on db';
                 return false;
             }
         }
     }
-
-    // public function __construct()
-    // {
-    //     $connect = new DB();
-    //     $this->dbConn = $connect->db_connection();
-    // }
-
 }
