@@ -14,8 +14,8 @@ if (isset($_POST['submit'])) {
     if ($toArray && $toArray != '') {
         // $classObj->save($toArray);
         echo '<script>';
-        echo 'alert("done")';
-
+        echo 'alert("Thank you for submitting your quote request...!!!")';
+        echo 'window.location.href="window.location.href"';
         // echo ' swal({';
         // echo 'title: "Welcome To VSS",';
         // echo 'text: "Thank you for submitting your quote request!!! ",';
@@ -24,10 +24,12 @@ if (isset($_POST['submit'])) {
 
         // echo  '}, 2000));';
         echo '</script>';
-        header('Location:quote.php');
+        exit();
+        //header('Location:quote.php');
     } else {
         echo '<script>';
-        echo 'alert("not done")';
+        echo 'alert("Somting is missing try Agin !!")';
+        echo 'window.location.href="window.location.href"';
         // echo 'swal({
         //     title: "Try Again",
         //     text: "Somting is missing try Agin !!",
