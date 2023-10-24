@@ -27,7 +27,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
+    <div class="container-fluid p-0 pb-5" id="home">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-1.jpg" alt="">
@@ -37,8 +37,8 @@
                             <div class="col-12 col-lg-8 text-center">
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Best CCTV & Security Solution For You</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="#" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                <a href="#Contact" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft">Contact Us</a>
+                                <a href="#Quote" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -52,8 +52,8 @@
                             <div class="col-12 col-lg-8 text-center">
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Smart Security Solution For All Business</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="#" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                <a href="#Contact" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft">Contact Us</a>
+                                <a href="#Quote" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -67,8 +67,8 @@
                             <div class="col-12 col-lg-8 text-center">
                                 <h1 class="display-3 text-white animated slideInDown mb-4">Innovative Solution For Security System</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="#" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight">Free Quote</a>
+                                <a href="#Contact" class="btn btn-primary rounded-pill py-md-3 px-md-5 me-3 animated slideInLeft">Contact Us</a>
+                                <a href="#Quote" class="btn btn-light rounded-pill py-md-3 px-md-5 animated slideInRight">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="AboutUs">
         <div class="container about px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
@@ -141,7 +141,13 @@
                     <div class="p-lg-5 pe-lg-0">
                         <div class="bg-primary mb-3" style="width: 60px; height: 2px;"></div>
                         <h1 class="display-5 mb-4">About Us</h1>
-                        <p class="mb-4 pb-2">Vimal CCTV installation and service is one of the best CCTV Camera installar and service provider in Cuddalore , Tamil Nadu.</p>
+                        <p class="mb-4 pb-2">
+                        Vimal CCTV installation and service is one of the best CCTV Camera interstellar and service provider in Cuddalore , Tamil Nadu.
+                            This leading service company has more than two years of experience in security solutions.<br>We are provide as the best security system installation in Cuddalore and excellent quality services.
+                            We help to improve the security solutions for your home, office, and other valuable properties.<br><br>
+                            As the best CCTV camera installar and service provider in Cuddalore, Vimal CCTV installation and service provides best in class access management solutions that enhance data security, efficiency, and productivity across the corporate network.
+                             Our team is young, energetic, and dynamic, committed who believes and practices quality as its profession.
+                        </p>
                         <div class="row g-4 mb-4 pb-3">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="d-flex align-items-center">
@@ -166,7 +172,6 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="about.php" class="btn btn-primary rounded-pill py-3 px-5">Explore More</a>
                     </div>
                 </div>
             </div>
@@ -176,7 +181,7 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="Services">
         <div class="container">
             <div class="text-center">
                 <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;"></div>
@@ -190,7 +195,6 @@
                         </div>
                         <h4 class="mb-3">Commercial CCTV System</h4>
                         <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
-                        <a class="btn" href=""><i class="fa fa-arrow-right text-white me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
@@ -200,7 +204,6 @@
                         </div>
                         <h4 class="mb-3">Finger Print Access</h4>
                         <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
-                        <a class="btn" href=""><i class="fa fa-arrow-right text-white me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
@@ -210,7 +213,6 @@
                         </div>
                         <h4 class="mb-3">Fire Detection And Safety</h4>
                         <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
-                        <a class="btn" href=""><i class="fa fa-arrow-right text-white me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -220,7 +222,6 @@
                         </div>
                         <h4 class="mb-3">Burglar Alarm</h4>
                         <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
-                        <a class="btn" href=""><i class="fa fa-arrow-right text-white me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -230,7 +231,6 @@
                         </div>
                         <h4 class="mb-3">Intercom system</h4>
                         <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
-                        <a class="btn" href=""><i class="fa fa-arrow-right text-white me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -240,7 +240,6 @@
                         </div>
                         <h4 class="mb-3">Networking</h4>
                         <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
-                        <a class="btn" href=""><i class="fa fa-arrow-right text-white me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -250,7 +249,6 @@
                         </div>
                         <h4 class="mb-3">Wirless smart camers</h4>
                         <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
-                        <a class="btn" href=""><i class="fa fa-arrow-right text-white me-3"></i>Read More</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -259,8 +257,7 @@
                             <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
                         </div>
                         <h4 class="mb-3">Smart Home Security</h4>
-                        <p class="mb-4">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
-                        <a class="btn" href=""><i class="fa fa-arrow-right text-white me-3"></i>Read More</a>
+                        <p class="mb-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem</p>
                     </div>
                 </div>
             </div>
@@ -270,7 +267,7 @@
 
 
     <!-- Feature Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="WhyChooseUs">
         <div class="container feature px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -335,7 +332,7 @@
         </div>
     </div>
     <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="Quote">
         <div class="container quote px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
@@ -361,10 +358,12 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
+                                        <option selected disabled>Select a Service</option>
+                                        <option value="1">Commercial CCTV System</option>
+                                        <option value="2">Fire Detection And Safety</option>
+                                        <option value="3">Networking</option>
+                                        <option value="4">Finger Print Access</option>
+                                        <option value="5">Other</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
@@ -382,14 +381,8 @@
     </div>
     <!-- Quote End -->
 
-
-    <!-- Team Start -->
-
-    <!-- Team End -->
-
-
     <!-- Contact Start -->
-    <div class="container-fluid bg-light overflow-hidden px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" id="Contact">
         <div class="container contact px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -402,20 +395,20 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Phone Number" required>
+                                        <label for="email">Phone Number</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
+                                        <input type="email" class="form-control" id="subject" placeholder="email address">
+                                        <label for="email address">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -433,7 +426,7 @@
                 </div>
                 <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.0139758405144!2d79.75829981444753!3d11.764066243404113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54999c123db539%3A0x8be443102cdc312b!2sCCTV%20camera%20installation%20and%20service%20%7C%20VIMAL%20GROUP%20OF%20COMPANIES!5e0!3m2!1sen!2sin!4v1678277256365!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.0139758405144!2d79.75829981444753!3d11.764066243404113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54999c123db539%3A0x8be443102cdc312b!2sCCTV%20camera%20installation%20and%20service%20%7C%20VIMAL%20GROUP%20OF%20COMPANIES!5e0!3m2!1sen!2sin!4v1678277256365!5m2!1sen!2sin" width="600" height="450" style="border:0; margin:5rem" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <!-- <iframe class="position-absolute w-100 h-100" style="object-fit: cover;" src="" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
                     </div>
                 </div>
@@ -446,12 +439,6 @@
     <!-- Footer Start -->
     <?php include("common/footer.php"); ?>
     <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <?php include("common/copyright.php"); ?>
-    <!-- Copyright End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>

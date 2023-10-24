@@ -8,13 +8,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-4 py-lg-0">
             <a href="#" class="nav-item nav-link">Home</a>
-            <a href="#" class="nav-item nav-link">About</a>
-            <a href="#" class="nav-item nav-link">Service</a>
-            <a href="#" class="nav-item nav-link">Project</a>
-            <a href="#" class="nav-item nav-link">Contact</a>
+            <a href="#AboutUs" class="nav-item nav-link">About</a>
+            <a href="#Services" class="nav-item nav-link">Service</a>
+            <a href="#WhyChooseUs" class="nav-item nav-link">Why Choose Us</a>
+            <a href="#Contact" class="nav-item nav-link">Contact</a>
         </div>
         <div class="h-100 d-lg-inline-flex align-items-center bg-dark d-none">
-            <a href="index.php" class="nav-link">Request A Quote</a>
+            <a href="#Quote" class="nav-link">Request A Quote</a>
         </div>
     </div>
 </nav>
